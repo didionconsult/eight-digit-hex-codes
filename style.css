@@ -1,46 +1,132 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="stylesheet" href="style.css">
-      <link rel="preconnect" href="https://fonts.gstatic.com">
-      <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-     
-    <div class="info-container">
-      <ul>
-        <li>&#128133;</li>
-        <li>Eight Diget</li>
-        <li>Hex Codes</li>
-      </ul>
-    </div>  
-  </head>
-  <body>
-    
+:root {
   
-<div class="container">
-  <ul>
-    <li><a href="#" class="buttonOne">#563d7c (opaque)</a></li>
-    <li><a href="#" class="buttonTwo">#563d7c<strong>26</strong> sets alpha to 15%</a></li>
-    <li><a href="#" class="buttonThree">#563d7c<strong>0d</strong> sets alpha to 5%</a></li>
-    <li><a href="#" class="buttonFour">rgba (86, 61, 124, 0.15) conversion of #563d7c26</a></li>  
-  </ul>
-</div>
+font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;  
+}
   
-<section class="reference">
-<h2>Reference:</h2>
-<ul>
-  <li><a href="https://css-tricks.com/8-digit-hex-codes/">8 Digit Hex Codes</a></li>
-  <li><a href="https://davidwalsh.name/hex-opacity">Hex Opacity Table</a></li>
-  <li><a href= "https://www.rapidtables.com/convert/number/decimal-to-hex.html?x=.15">Number to Hex Converter</a></li>
-  <li><a href="https://stackoverflow.com/questions/5445085/understanding-colors-on-android-six-characters/25170174#25170174">Stack Overflow Reference</a></li>
-  <li><a href="https://drafts.csswg.org/css-color/#hex-notation">W3C Hexadecimal Notations</a></li>
-</ul>
+html{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-y: scroll;
+  margin: auto;
+  max-width: 800px;
+  padding: 20px 0;
+  position: relative; 
+}
+
+.info-container {
+  width: 72%;
+  float: left;
+  padding: 10px 25px 10px;
+  margin-bottom: -25px;
+  background-color: azure;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}   
+
+h2 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.container {
+  width: 72%;
+  float: left;
+  padding: 10px 25px 20px;
+}
+
+.buttonOne,
+.buttonTwo,
+.buttonThree,
+.buttonFour {
+  border-radius:4px;
+  text-decoration: none;
+  font-size:16px;
+  width: 72%;
+  float: left;
+  padding: 10px 25px 70px;
+}
+
+.buttonOne {
+  background-color: #563d7c;
+	color: papayawhip;
+}
+
+.buttonTwo {
+	background-color:#563d7c26;
+	color: #af86fc;
+}  
+
+.buttonThree {
+  background-color: #563d7c0d;
+	color: #af86fc;
+}
+
+.buttonFour {
+  background-color: rgba(86,61,124,0.15);
+	color: #af86fc;
+}  
   
-  </section> 
-  <hr class="line">
-  <footer>
-    <div>&#x1f353; By: <a href="https://github.com/didionconsult">Didion</a></div>
-  </footer>
-  </body>
-</html>
+ul {
+  list-style: none;
+  margin-left: 1.3rem;
+  padding: 0; 
+}
+
+ul, li {
+  position: relative;
+}
+
+.reference {
+  margin-top: 0;
+  color: #af86fc; 
+  width: 72%;
+  float: left;
+  padding: 5px 46px 5px;
+}
+  
+.reference a {
+  color: #af86fc; 
+  text-decoration: none; 
+  padding: 0 6px; 
+  border-radius: 4px;
+}
+
+.reference a:hover {
+  cursor: pointer; 
+  background: #eef; 
+  padding: 0 2px; 
+  border-radius: 4px;
+}
+ 
+.line {
+  width: 82%;
+  float: left;
+  padding: 
+  border-top: 1.5px solid #F9DEEF; 
+  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  border-image-slice: 1;
+}
+
+footer{
+  color: #af86fc; 
+  font-size: .75rem;
+  width: 72%;
+  float: left;
+  padding: 5px 45px 10px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+/*  Media styles           */  
+@@media (max-width: 800px) {
+  .container, .reference {
+    flex: 100%;
+  }
+}
+
