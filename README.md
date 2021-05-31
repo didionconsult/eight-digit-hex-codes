@@ -1,1 +1,5 @@
-# eight-digit-hex-codes
+# Eight-digit-hex-codes
+
+#### A small color palette showing opacity variation. 
+- demonstrates changes in alpha percentages with eight digit hex codes
+- gives a list of resources
